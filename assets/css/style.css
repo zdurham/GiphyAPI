@@ -1,0 +1,21 @@
+body {
+  height: 100%;
+}
+
+.container-fluid {
+  height: 100%;
+}
+
+#submission-column {
+  background-color: grey;
+  height: 100%;
+}
+
+#button-holder {
+  background-color: red;
+}
+
+#gif-holder {
+  background-color: blue;
+  height: 100%;
+}
