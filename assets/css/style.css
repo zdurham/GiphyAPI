@@ -1,21 +1,35 @@
-body {
-  height: 100%;
+html,
+body,
+.container-fluid,
+#row1,
+#gif-column,
+#sub-row2 {
+  height: 100%
 }
 
-.container-fluid {
-  height: 100%;
-}
 
 #submission-column {
+  height: 100%;
+  vertical-align: baseline;
+}
+
+#submission-box {
+  position: fixed;
+  top: 150px;
+  width: 100px;
+  text-align: center;
+  vertical-align: center;
+}
+
+#gif-column {
+  overflow: hidden;
+}
+
+#gif-holder {
   background-color: grey;
   height: 100%;
 }
 
-#button-holder {
-  background-color: red;
-}
-
-#gif-holder {
-  background-color: blue;
-  height: 100%;
+.gif-button {
+  margin: 10px
 }
