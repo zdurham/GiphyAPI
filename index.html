@@ -10,30 +10,23 @@
   <body>
     <div class="container-fluid"> <!-- container for Bootstrap Grid -->
       <div class="row" id="row1"> <!-- Opening Row 1 -->
-        <div class="col-md-3" id="submission-column"> <!-- First column, basically a sidebar -->
+        <div class="col-md-3 col-sm-3" id="submission-column"> <!-- First column, basically a sidebar -->
           <div id="submission-box">
-              <label>Want to add your own button?</label>
-              <input type="text" name="new-button-text"></input>
-              <button class="btn btn-primary" id="submit-button">Submit!</button>
+            <div id="button-holder">
+              a;slkdj;askjdiasjd;iasjd;aid;ashj
+              <!-- Buttons will be appended here -->
+            </div>
+
+            <label>Want to add your own button?</label>
+            <input type="text" name="new-button-text"></input>
+            <button class="btn btn-primary" id="submit-button">Submit!</button>
           </div>
         </div> <!-- Closing first column -->
-        <div class="col-md-9" id="gif-column"> <!-- Second Column, will house 2 sub rows, one for buttons and one for actual gifs -->
-          <div class="row"> <!-- Sub Row 1 -->
-            <div class="col-md-12" id="button-holder">
-              <div id="button-holder">
-                a;slkdj;askjdiasjd;iasjd;aid;ashj
-                <!-- Buttons will be appended here -->
-              </div>
-            </div>
-          </div> <!-- Closing Sub Row 1 -->
-          <div class="row" id="sub-row2"> <!-- Sub Row 2 -->
-            <div class="col-md-12" id="gif-holder">
-              <div id="gifs">
-                asdjhasdha;shdask
-                <!-- Gifs will be appended here --> 
-              </div>
-            </div>
-          </div> <!-- Closing Sub Row 2 -->
+        <div class="col-md-9 col-sm-9" id="gif-column"> <!-- Second Column, will house 2 sub rows, one for buttons and one for actual gifs -->
+         <div id="gifs">
+           asdjhasdha;shdask
+           <!-- Gifs will be appended here --> 
+          </div>
         </div> <!-- Closing second column -->
       </div> <!-- Closing Row 1 -->
     </div> <!-- Closing the container -->  

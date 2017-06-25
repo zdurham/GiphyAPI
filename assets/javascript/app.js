@@ -19,6 +19,7 @@ $(document).ready( function() {
       gifButton.text(movies[i])
     }
   };
+
   // Call buttonMaker();
   buttonMaker();
 
@@ -28,10 +29,10 @@ $(document).ready( function() {
   $("#submit-button").on("click", function() {
     event.preventDefault();
 
-    var input =  $("input").val()
+    var input =  $("input").val().trim()
     movies.push(input)
     buttonMaker();
-  })
+  });
 
   // On click event for the buttons -> AJAX call
   $(document.body).on("click", ".gif-button", function(){
@@ -46,11 +47,31 @@ $(document).ready( function() {
     $.ajax({url: queryURL, method: "get"})
     .done(function(response) {
       console.log(response)
+      
+      // Results is a var we will use to save some typing of response.data everytime
+      var results = response.data
 
+      // Use a for loop to create content
+      for (var i = 0; i < results.length; i++) {
+        var gifHolder = $("<div class='gif-holder'>")
+        var rating = $("<h3>")
+        var img = $("<img class='gif'>")
 
-    })
+        // Append gifHolder to the "gifs" div and append rating and img to gifHolder
+        gifHolder.appendTo($("#gifs"))
+        rating.prependTo(gifHolder)
+        img.appendTo(gifHolder)
 
+        // Now give the img and rating their content
+        rating.text("Rating: " + results[i].rating)
+        img.attr("src", results[i].images.original_still.url).attr("data-still", results[i].images.original_still.url).attr("data-animate", results[i].images.original.url).attr("data-state", "still")
+      };
+    });
+  });
 
-  })
-})
+  // Now we need an onclick function for the gifs to un-pause and pause
+  $(document.body).on("click", ".gif", function() {
+
+  });
+});
 
