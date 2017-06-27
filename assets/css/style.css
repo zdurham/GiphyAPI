@@ -1,8 +1,9 @@
 /*---------- Full Body Styling ----------*/
 
 body {
-  font-family: 'Eczar', serif;
-  background-image: url("../images/pink-dust.png")
+  font-family: 'Dosis', sans-serif;
+  background-color: #311260;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%238544f4' fill-opacity='0.48'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 
@@ -40,7 +41,7 @@ body,
   overflow: scroll;
   height: 200px;
   width: 100%;
-  border: 1px #368F8B solid;
+  border: 1px #0E0240 solid;
   border-radius: 20px
 }
 
@@ -66,17 +67,18 @@ label {
 input,
 input:checked,
 input:focus {
-  border: 2px teal solid;
+  border: 2px #0E0240 solid;
   box-shadow: none;
   border-radius: 20px;
 }
 
 #submit-button {
   margin: 5px;
-  background-color: #368F8B;
+  background-color: #0E0240;
   color: white;
   border: white 1px solid;
   display: inline-block;
+
 }
 
 #submit-button:hover {
@@ -92,9 +94,10 @@ input:focus {
   display: inline-block;
   border-radius: 4px;
   color: white;
-  background-color:  #368F8B;
+  background-color:  #0E0240;
   box-shadow: 4px 4px 5px #888888;
   border: white 1px solid;
+
   
 }
 
@@ -130,19 +133,20 @@ input:focus {
 
 .rating {
   position: absolute;
-  top: 54px;
-  left: 0px;
-  background-color: white;
+  bottom: 220px;
+  right: 110px;
   border-radius: 5px;
   padding: 5px;
-  border: #368F8B solid 1px;
+  font-size: 14px;
+  color: white;
+  text-shadow: 2px 2px 20px #924DF9;
+  z-index: 15;
 }
 
 .gif-holder {
   height: 430px;
   width: 444px;
   background-image: url("../images/tv-clipart.png");
-  border-radius: 5px;
   display: inline-block;
   margin: 10px;
   position: relative;
