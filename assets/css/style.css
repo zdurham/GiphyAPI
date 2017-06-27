@@ -41,6 +41,7 @@ body,
   height: 200px;
   width: 100%;
   border: 1px #368F8B solid;
+  border-radius: 20px
 }
 
 #sidebar::after {
@@ -53,6 +54,7 @@ body,
   left: 0;
   bottom: 0;
   z-index: -1;
+  border-radius: 20px;
 }
 
 label {
@@ -73,6 +75,14 @@ input:: {
 
 #submit-button {
   margin: 5px;
+  background-color: #368F8B;
+  color: #160F29;
+  border: #160F29 1px solid;
+}
+
+#submit-button:hover {
+  background-color: #160F29;
+  color: #368F8B;
 }
 
 .gif-button {
@@ -83,23 +93,17 @@ input:: {
   color: #160F29;
   background-color:  #368F8B;
   box-shadow: 4px 4px 5px #888888;
+  border: #160F29 1px solid;
   
 }
 
 .gif-button:hover {
   background-color: #160F29;
   color: #368F8B;
-  border: #F3DFC1 3px solid;
+  border: #DDBEA8 3px solid;
   transform: scale(1.1);
   
 }
-
-.gif-button:active {
-  background-color: ;
-  color:
-}
-
-
 
 
 /*---------- Gif Column Styling ----------*/
@@ -127,11 +131,12 @@ input:: {
 
 .rating {
   position: absolute;
-  top: 0px;
-  left: 150px;
+  top: 54px;
+  left: 0px;
   background-color: white;
   border-radius: 5px;
   padding: 5px;
+  border: #368F8B solid 1px;
 }
 
 .gif-holder {
@@ -142,17 +147,4 @@ input:: {
   display: inline-block;
   margin: 10px;
   position: relative;
-}
-
-.gif-holder::after {
-  content:"";
-  background-color: white;
-  opacity: 0.4;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  border-radius: 25px;
 }

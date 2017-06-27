@@ -2,8 +2,7 @@
 $(document).ready(function() {
   
   // Array of strings that will become buttons
-  var shows = ["Dexter's Lab", "Samurai Jack", "Ed Edd & Eddy", "Johnny Bravo", "Kids Next Door", "Courage the Cowardly Dog", "Adventure Time", "Star Wars: The Clone Wars", "Rick and Morty", "The PowerPuff Girls"]
-
+  var shows = ["Mr. Robot", "Twin Peaks", "Silicon Valley", "Mad Men", "The Wire", "Fargo", "Courage the Cowardly Dog", "The Office", "House of Cards", "Rick and Morty", "Westworld"]
 
   
   // For loop function that generates buttons
