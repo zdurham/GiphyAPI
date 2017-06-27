@@ -54,7 +54,7 @@ $(document).ready(function() {
     var search = "&q=" + $(this).attr("data-name")
     var apiKey = "api_key=a5d5a60f34f646a9874ac6e7b0f96b72"
     var limit = "&limit=10"
-    var queryURL = "http://api.giphy.com/v1/gifs/search?" + apiKey + search + limit
+    var queryURL = "https://api.giphy.com/v1/gifs/search?" + apiKey + search + limit
 
     // Actual AJAX call
     $.ajax({url: queryURL, method: "get"})

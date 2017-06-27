@@ -29,7 +29,7 @@ body,
   top: 200px;
   left: 20px;
   margin: auto;
-  width: 200px;
+  width: 300px;
   text-align: center;
   vertical-align: center;
   padding: 20px;
@@ -40,12 +40,13 @@ body,
   overflow: scroll;
   height: 200px;
   width: 100%;
+  border: 1px #368F8B solid;
 }
 
 #sidebar::after {
   content: "";
   background-color: white;
-  opacity: .5;
+  opacity: .4;
   position: absolute;
   top: 0;
   right: 0;
@@ -55,6 +56,7 @@ body,
 }
 
 label {
+  margin-top: 5px;
   font-weight: bold;
   font-size: 16px;
 }
@@ -145,7 +147,7 @@ input:: {
 .gif-holder::after {
   content:"";
   background-color: white;
-  opacity: 0.6;
+  opacity: 0.4;
   position: absolute;
   top: 0;
   left: 0;
