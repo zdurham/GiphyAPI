@@ -1,3 +1,11 @@
+/*---------- Full Body Styling ----------*/
+
+body {
+  font-family: 'Eczar', serif;
+  background-image: url("../images/pow-star.png")
+}
+
+
 html,
 body,
 .container-fluid,
@@ -7,25 +15,141 @@ body,
   height: 100%
 }
 
+/*---------- Sidebar Styling ----------*/
 
-#submission-column {
+#button-column {
   height: 100%;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-#submission-box {
+#sidebar {
+  position: fixed;
+  top: 200px;
+  left: 20px;
   margin: auto;
-  width: 80%;
+  width: 200px;
   text-align: center;
   vertical-align: center;
+  padding: 20px;
+  border-radius: 20px;
 }
 
-#gif-holder {
-  background-color: grey;
-  height: 100%;
+#button-holder {
+  overflow: scroll;
+  height: 200px;
+  width: 100%;
+}
+
+#sidebar::after {
+  content: "";
+  background-color: white;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+label {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+input,
+input:checked,
+input:focus,
+input::selection {
+  border: 2px teal solid;
+  box-shadow: none;
+  border-radius: 20px;
+}
+
+#submit-button {
+  margin: 5px;
 }
 
 .gif-button {
-  margin: 10px;
+  margin: 5px;
+  padding: 5px;
   display: inline-block;
+  border-radius: 4px;
+  color: #160F29;
+  background-color:  #368F8B;
+  box-shadow: 4px 4px 5px #888888;
+  
+}
+
+.gif-button:hover {
+  background-color: #160F29;
+  color: #368F8B;
+  border: #F3DFC1 3px solid;
+  transform: scale(1.1);
+  
+}
+
+.gif-button:active {
+  background-color: ;
+  color:
+}
+
+
+
+
+/*---------- Gif Column Styling ----------*/
+
+#gif-column {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#gifs {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.gif {
+  height: 222px;
+  width: 296px;
+  position: absolute;
+  top: 161px;
+  left: 48px;
+  right: 104px;
+  bottom: 55px;
+}
+
+.rating {
+  position: absolute;
+  top: 0px;
+  left: 150px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.gif-holder {
+  height: 430px;
+  width: 444px;
+  background-image: url("../images/tv-clipart.png");
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px;
+  position: relative;
+}
+
+.gif-holder::after {
+  content:"";
+  background-color: white;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 25px;
 }
