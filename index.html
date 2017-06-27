@@ -11,17 +11,15 @@
   <body>
     <div class="container-fluid"> <!-- container for Bootstrap Grid -->
       <div class="row" id="row1"> <!-- Opening Row 1 -->
-        <div class="col-md-3 col-sm-3" id="button-column"> <!-- First column, basically a sidebar -->
           <div id="sidebar">
             <div id="button-holder">
               <!-- Buttons will be appended here -->
             </div>
-            <label>Your favorite Cartoon Network show not listed? Add them here!</label>
+            <label>Your favorite TV show not listed? Add them here!</label>
             <input type="text" name="new-button-text"></input>
             <button class="btn btn-primary" id="submit-button">Submit!</button>
           </div>
-        </div> <!-- Closing first column -->
-        <div class="col-md-9 col-sm-9" id="gif-column"> <!-- Second Column, will house 2 sub rows, one for buttons and one for actual gifs -->
+        <div class="col-md-9 col-md-offset-3 col-sm-12 col-xs-12" id="gif-column"> <!-- Second Column, will house 2 sub rows, one for buttons and one for actual gifs -->
           <div id="gifs"> <!-- Gifs will be appended here --> 
           </div>
         </div> <!-- Closing second column -->

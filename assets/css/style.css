@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Eczar', serif;
-  background-image: url("../images/pow-star.png")
+  background-image: url("../images/pink-dust.png")
 }
 
 
@@ -47,7 +47,7 @@ body,
 #sidebar::after {
   content: "";
   background-color: white;
-  opacity: .4;
+  opacity: .5;
   position: absolute;
   top: 0;
   right: 0;
@@ -65,9 +65,7 @@ label {
 
 input,
 input:checked,
-input:focus,
-input::selection,
-input:: {
+input:focus {
   border: 2px teal solid;
   box-shadow: none;
   border-radius: 20px;
@@ -76,13 +74,16 @@ input:: {
 #submit-button {
   margin: 5px;
   background-color: #368F8B;
-  color: #160F29;
-  border: #160F29 1px solid;
+  color: white;
+  border: white 1px solid;
+  display: inline-block;
 }
 
 #submit-button:hover {
-  background-color: #160F29;
+  background-color: white;
   color: #368F8B;
+  border: #368F8B 1px solid;
+  transform: scale(1.1)
 }
 
 .gif-button {
@@ -90,19 +91,17 @@ input:: {
   padding: 5px;
   display: inline-block;
   border-radius: 4px;
-  color: #160F29;
+  color: white;
   background-color:  #368F8B;
   box-shadow: 4px 4px 5px #888888;
-  border: #160F29 1px solid;
+  border: white 1px solid;
   
 }
 
 .gif-button:hover {
-  background-color: #160F29;
+  background-color: white;
   color: #368F8B;
-  border: #DDBEA8 3px solid;
-  transform: scale(1.1);
-  
+  border: #368F8B 1px solid;  
 }
 
 
@@ -147,4 +146,36 @@ input:: {
   display: inline-block;
   margin: 10px;
   position: relative;
+}
+
+
+/*---------- Media Queries ----------*/
+
+@media screen and (max-width: 1200px) {
+  #sidebar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    border-radius: 0px;
+    z-index: 25;
+  }
+
+  #button-holder {
+    height: 60px !important;
+    padding: 10px;
+    overflow-x: scroll;
+    overflow-y: none;
+    white-space: nowrap;
+    display: inline-block;
+    height: auto;
+  }
+
+  #gif-column {
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
 }
