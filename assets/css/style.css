@@ -62,7 +62,8 @@ label {
 input,
 input:checked,
 input:focus,
-input::selection {
+input::selection,
+input:: {
   border: 2px teal solid;
   box-shadow: none;
   border-radius: 20px;

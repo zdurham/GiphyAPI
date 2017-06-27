@@ -2,7 +2,7 @@
 $(document).ready(function() {
   
   // Array of strings that will become buttons
-  var shows = ["Batman", "Black Panther", "Spiderman", "Green Lantern", "Hellboy", "Ironman", "Archie", "Wolverine", "Thor", "Wonder Woman", "Darkseid"]
+  var shows = ["Dexter's Lab", "Samurai Jack", "Ed Edd & Eddy", "Johnny Bravo", "Kids Next Door", "Courage the Cowardly Dog", "Adventure Time", "Star Wars: The Clone Wars", "Rick and Morty", "The PowerPuff Girls"]
 
 
   
@@ -23,7 +23,6 @@ $(document).ready(function() {
   // Call buttonMaker();
   buttonMaker();
 
-  
   
   // Below is the onclick function for the submit button
   $("#submit-button").on("click", function() {
